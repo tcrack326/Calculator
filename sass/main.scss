@@ -1,3 +1,24 @@
-body{
-  text-align:center;
+body {
+  text-align: center;
+  padding: 2px;
+  overflow: auto;
+}
+
+*{
+  border:1px solid red;
+}
+
+.answer{
+  margin:0 auto;
+
+  span#answer{
+    float:left;
+    clear:right;
+  }
+
+  span#pic{
+    float:left;
+    height:100px;
+    width:100px
+  }
 }

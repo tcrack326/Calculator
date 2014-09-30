@@ -1,4 +1,19 @@
 body {
-  text-align: center; }
+  text-align: center;
+  padding: 2px;
+  overflow: auto; }
+
+* {
+  border: 1px solid red; }
+
+.answer {
+  margin: 0 auto; }
+  .answer span#answer {
+    float: left;
+    clear: right; }
+  .answer span#pic {
+    float: left;
+    height: 100px;
+    width: 100px; }
 
 /*# sourceMappingURL=main.css.map */
