@@ -24,15 +24,15 @@ var performCalculation = function(number1,number2){
     }
     //If total is zero add this text to screen
     else if(total <= 0){
-      text = "I can haz no cheezburgerz! Me Grumpy Cat!!";
+      text = "I can has no cheezburgerz! Me Grumpy Cat!!";
     }
     //If total is one add this text
     else if(total == 1){
-      text = "I can haz a cheezburger!";
+      text = "I can has a cheezburger!";
     }
     // If total is more than one add this text
     else{
-      text = "Answer: I can haz " + total + " cheezburgerz!";
+      text = "I can has " + total + " cheezburgerz!";
     }
     //Add the text to the screen
     answer.innerHTML = text;
@@ -49,5 +49,9 @@ var performCalculation = function(number1,number2){
 }
 
 calculateButton.onclick = function(){
+  //need to clear previous burger image additions
+  while(pic.firstChild){
+    pic.removeChild(pic.firstChild);
+  }
   performCalculation(value1,value2);
 }

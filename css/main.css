@@ -1,19 +1,59 @@
 body {
   text-align: center;
-  padding: 2px;
-  overflow: auto; }
+  overflow: auto;
+  border: 5px solid HSLA(353, 100%, 62%, 1);
+  font-family: "Luckiest Guy", cursive;
+  color: HSLA(8, 100%, 75%, 1);
+  border-radius: 20px; }
 
-* {
-  border: 1px solid red; }
+img {
+  margin-top: 20px;
+  border-radius: 5px; }
+
+.cat {
+  border: 1px solid HSLA(353, 100%, 62%, 1); }
+
+h1 {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  margin: 0 auto;
+  padding: 5px;
+  font-size: 64px;
+  color: white;
+  background-color: HSLA(8, 100%, 75%, 1);
+  border-bottom: 2px solid HSLA(353, 100%, 62%, 1); }
+
+input {
+  text-align: center;
+  width: 100px;
+  font-size: 24px;
+  font-family: "Luckiest Guy", cursive;
+  background-color: none;
+  border: 2px solid HSLA(353, 100%, 62%, 1);
+  border-radius: 10px;
+  color: HSLA(353, 100%, 62%, 1); }
+
+input#calculateBtn {
+  background-color: none;
+  width: 200px; }
 
 .answer {
-  margin: 0 auto; }
-  .answer span#answer {
+  text-align: center;
+  overflow: auto;
+  font-size: 36px; }
+  .answer span:first-child {
     float: left;
-    clear: right; }
+    clear: both;
+    margin: 0 auto;
+    padding: 6px; }
   .answer span#pic {
     float: left;
-    height: 100px;
-    width: 100px; }
+    margin: 0 auto;
+    width: 100%; }
+    .answer span#pic img {
+      float: left;
+      width: 19%;
+      margin: 3px; }
 
 /*# sourceMappingURL=main.css.map */
