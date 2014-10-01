@@ -1,11 +1,19 @@
-//var text = "I can haz " + total + " cheezburgers!",
-var total,
+//global variables
+var text,
+total,
 value1 = document.getElementById("num_one"),
 value2 = document.getElementById("num_two"),
 calculateButton = document.getElementById("calculateBtn"),
+addBtn = document.getElementById("addBtn"),
+subtractBtn = document.getElementById("subtractBtn"),
+multBtn = document.getElementById("multBtn"),
+divBtn = document.getElementById("divBtn"),
 answer = document.getElementById("answer"),
-pic = document.getElementById("pic");
+pic = document.getElementById("pic"),
+opSpan = document.getElementById("operator"),
+operator="add";
 
+//function to do each calculation based on entries provided by user. checks for valid entries.
 var performCalculation = function(number1,number2){
 
   //Check to make sure values were entered in input fields
@@ -15,9 +23,24 @@ var performCalculation = function(number1,number2){
   else{
     number1 = Number(number1.value);
     number2 = Number(number2.value);
-    total = number1 + number2;
+  }
+    //set up calculation with different operators, TO DO: could also use a switch statement here in future
+    if(operator == "add"){
+      total = number1 + number2;
+      }
 
-    var text;
+    else if(operator == "subtract"){
+      total = number1 - number2;
+      }
+
+    else if(operator == "multiply"){
+      total = number1 * number2;
+    }
+
+    else if(operator == "divide"){
+      total = number1 / number2;
+    }
+
   //Check to make sure valid numbers were entered in input fields for numbers
     if(isNaN(total)){
       alert("Enter numberz meow!");
@@ -50,7 +73,6 @@ var performCalculation = function(number1,number2){
       image.setAttributeNode(attr);
       pic.appendChild(image);
     }
-  }
 }
 
 calculateButton.onclick = function(){
@@ -60,4 +82,25 @@ calculateButton.onclick = function(){
     pic.removeChild(pic.firstChild);
   }
   performCalculation(value1,value2);
+}
+
+//set up operator with button clicks (default is "add" defined in global variables)
+addBtn.onclick = function(){
+  operator = "add";
+  opSpan.innerHTML = "add";
+}
+
+subtractBtn.onclick = function(){
+  operator = "subtract";
+  opSpan.innerHTML = "subtract";
+}
+
+multBtn.onclick = function(){
+  operator = "multiply";
+  opSpan.innerHTML = "multiply";
+}
+
+divBtn.onclick = function(){
+  operator = "divide";
+  opSpan.innerHTML = "divide";
 }

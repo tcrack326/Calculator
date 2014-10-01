@@ -38,6 +38,16 @@ input#calculateBtn {
   background-color: none;
   width: 200px; }
 
+ul {
+  overflow: auto;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  padding: 5px; }
+  ul li {
+    display: inline-block; }
+
 .answer {
   text-align: center;
   overflow: auto;
