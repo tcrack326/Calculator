@@ -54,7 +54,7 @@ var performCalculation = function(number1,number2){
       image.setAttributeNode(attr);
       pic.appendChild(image);
     }
-    //If total is one add this text
+    //If total is one then add this text
     else if(total == 1){
       text = "I can has a cheezburger!";
     }
