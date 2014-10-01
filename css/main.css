@@ -52,7 +52,7 @@ input#calculateBtn {
     margin: 0 auto;
     width: 100%; }
     .answer span#pic img {
-      float: left;
+      display: inline-block;
       width: 19%;
       margin: 3px; }
 
