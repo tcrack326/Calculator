@@ -6,6 +6,9 @@ body {
   color: HSLA(8, 100%, 75%, 1);
   border-radius: 20px; }
 
+p {
+  font-size: 2px; }
+
 img {
   margin-top: 20px;
   border-radius: 5px; }
